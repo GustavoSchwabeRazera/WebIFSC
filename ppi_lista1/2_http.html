@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP</title>
+</head>
+<body>
+    <div>
+        <h1>O que é HTTP?</h1>
+        <p>
+            O HTTP (Hypertext Transfer Protocol) é o protocolo usado para a comunicação entre o navegador (cliente) e um servidor Web. 
+            Quando acessamos um site, o navegador envia uma requisição HTTP (request) pedindo algum recurso. 
+            O servidor recebe o pedido e devolve uma resposta HTTP (response), que pode conter HTML, imagens, dados e outros arquivos.
+        </p>
+        <img src=".\images\images.png" alt="HTTP">
+        <hr>
+        <h2>Como é usado na web?</h2>
+        <p>
+            O HTTP é usado para solicitar e enviar dados entre um navegador web e um servidor web. 
+            Quando você acessa um site, seu navegador envia uma solicitação HTTP ao servidor, que responde com os dados solicitados, 
+            como páginas HTML, imagens, scripts e outros recursos.
+        </p>
+        <hr>
+        <h2>Exemplo Requisição:</h2>
+        <p>
+            GET /index.html HTTP/1.1<br>
+            Host: exemplo.com<br>
+            User-Agent: Mozilla/5.0<br>
+            Accept: text/html<br>
+            Accept-Language: pt-BR<br>
+        </p>
+        <p>
+            Os principais campos são: GET, que indica o método utilizado; Host, que identifica o servidor; User-Agent, 
+            que informa características do navegador; 
+            Accept, que indica os tipos de conteúdo aceitos; e Accept-Language, que informa os idiomas preferidos.
+        </p>
+        <img src=".\images\request.jpg" alt="">
+
+        <hr>
+        <h2>Exemplo Resposta:</h2>
+        <p>
+            HTTP/1.1 200 OK<br>
+            Content-Type: text/html<br>
+            Content-Length: 1234<br>
+            <br>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+                &lt;title&gt;Exemplo&lt;/title&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+                &lt;h1&gt;Bem-vindo ao Exemplo&lt;/h1&gt;<br>
+                &lt;p&gt;Este é um exemplo de página web.&lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </p>
+        <p>
+            <span style="color: green;">200 OK</span> significa que a requisição foi realizada com sucesso. 
+            <span style="color: blue;">Content-Type</span> informa o tipo do conteúdo retornado, como text/html. 
+            <span style="color: blue;"></span>Content-Length</span> informa o tamanho da resposta em bytes e <span style="color: blue;">Server</span> pode fornecer informações sobre o software do servidor. 
+        </p>
+        <img src=".\images\response.png" alt="">
+
+    </div>
+</body>
+</html>
