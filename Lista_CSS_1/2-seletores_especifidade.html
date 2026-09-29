@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>   
+   <title>Exemplo especificidade de seletores</title>
+   <style>
+      /*regra 1*/ li{color:red;}
+      /*regra 2*/ .churras{color:green;}
+      /*regra 3*/ .fruta{color:gray}
+      /*regra 4*/ li+li.churras{color: black;}
+      /*regra 5*/ .churras[draggable="true"]{color: magenta;}
+      /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
+      /*regra 7*/ #lip3.fruta{color:orange}
+      /*regra 8*/ ol>li.churras#lip5{color:purple}
+   </style>
+</head>
+<body>   
+   <ol>
+   <!--item 1--> <li id="lip0">Abacaxi</li>
+   <!--item 2--> <li           class="fruta">Melão</li>
+   <!--item 3--> <li id="lip2" class="fruta">Pera</li>
+   <!--item 4--> <li id="lip3" class="fruta">Uva</li>
+   <!--item 5--> <li id="lip4" class="fruta">Maçã</li>
+   <!--item 6--> <li           class="churras">Carne</li>
+   <!--item 7--> <li           class="churras">Linguiça</li>
+   <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho</li>
+   </ol>   
+
+   <p>
+    A especificidade do CSS define qual regra será aplicada quando várias regras podem atingir o mesmo elemento. A ordem de prioridade, de forma geral, é: ID > classe/atributo > elemento.
+
+No exemplo, cada item recebe uma cor de acordo com a regra mais específica que corresponde a ele. O li aplica uma cor básica, enquanto classes como .fruta e .churras são mais específicas. Seletores com ID, como #lip2, têm prioridade maior. Quando combinamos seletores, como #lip3.fruta ou .churras[draggable="true"], a especificidade aumenta.
+
+A regra li+li.churras também considera a posição do elemento, selecionando um li que vem imediatamente depois de outro li e possui a classe churras. Já a regra ol>li.churras#lip5 não é aplicada porque não existe nenhum elemento com o ID lip5.
+
+Portanto, o navegador sempre verifica quais regras correspondem ao elemento e aplica a que possui maior especificidade.
+   </p>
+</body>
+</html>

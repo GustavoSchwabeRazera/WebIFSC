@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Animação de Barquinho no Mar</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .cenario {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(#87ceeb 65%, #ffffff);
+      overflow: hidden;
+    }
+
+    .nuvem {
+      position: absolute;
+      top: 15%;
+      left: -150px;
+      width: 110px;
+      height: 38px;
+      background: #ffffff;
+      border-radius: 50px;
+      box-shadow: 28px -14px 0 8px #ffffff, 60px -4px 0 6px #ffffff;
+      animation: nuvem 22s linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes nuvem {
+      from {
+        left: -150px;
+      }
+
+      to {
+        left: 100vw;
+      }
+    }
+
+    .barco-container {
+      position: absolute;
+      bottom: 100px;
+      left: -130px;
+      width: 120px;
+      height: 120px;
+      animation: navegar 16s linear infinite;
+      z-index: 3;
+    }
+
+    .barco {
+      width: 100%;
+      height: 100%;
+      background-image: url("barco.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      animation: balancar 2.2s ease-in-out infinite alternate;
+      transform-origin: bottom center;
+    }
+
+    @keyframes navegar {
+      from {
+        left: -130px;
+      }
+
+      to {
+        left: 100vw;
+      }
+    }
+
+    @keyframes balancar {
+      from {
+        transform: rotate(-6deg) translateY(0);
+      }
+
+      to {
+        transform: rotate(6deg) translateY(-6px);
+      }
+    }
+
+    .mar {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 140px;
+      background: #3b52f6;
+      z-index: 2;
+    }
+
+    .onda {
+      position: absolute;
+      width: 200%;
+      height: 40px;
+      background-size: 40px 40px;
+    }
+
+    .onda1 {
+      top: -20px;
+      left: 0;
+      background-image: radial-gradient(circle at 20px 0, transparent 20px, #3b52f6 21px);
+      animation: onda 2.5s ease-in-out infinite alternate;
+      z-index: 4;
+    }
+
+    .onda2 {
+      top: -15px;
+      left: -20px;
+      background-image: radial-gradient(circle at 20px 0, transparent 20px, #253be8 21px);
+      animation: onda 2.5s ease-in-out infinite alternate-reverse;
+      z-index: 2;
+    }
+
+    @keyframes onda {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-30px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cenario">
+
+    <div class="nuvem"></div>
+
+    <div class="barco-container">
+      <div class="barco"></div>
+    </div>
+
+    <div class="mar">
+      <div class="onda onda1"></div>
+      <div class="onda onda2"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>

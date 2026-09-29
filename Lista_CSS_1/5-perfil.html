@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        .curriculo {
+            width: 760px;
+            height: 600px;
+            margin: 0;
+            position: relative;
+        }
+
+       
+
+        .lateral {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 160px;
+            height: 100vh;
+            background-color: #414955;
+            color: white;
+            padding: 12px;
+        }
+
+        .foto {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        .titulo-lateral {
+            font-weight: bold;
+            border-bottom: 2px solid #aaa;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+
+        .informacao {
+            font-size: 9px;
+            margin-bottom: 10px;
+        }
+
+        .informacao strong {
+            display: block;
+            font-size: 9px;
+        }
+
+       
+
+        .conteudo {
+            position: absolute;
+            left: 180px;
+            top: 0;
+            width: 560px;
+            color: #333;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 26px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 12px;
+        }
+
+        .descricao {
+            font-size: 10px;
+            line-height: 1.5;
+            color: #666;
+            margin-top: 15px;
+        }
+
+        h2 {
+            font-size: 14px;
+            margin-top: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        .experiencia {
+            margin-top: 15px;
+        }
+
+        .cargo {
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        .data {
+            float: right;
+            font-size: 9px;
+            color: #666;
+        }
+
+        .empresa {
+            font-size: 10px;
+            font-style: italic;
+            color: #555;
+            margin-top: 4px;
+        }
+
+        ul {
+            font-size: 9px;
+            color: #666;
+            margin-top: 5px;
+            padding-left: 15px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="curriculo">
+
+        <div class="lateral">
+
+            <img
+                class="foto"
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+            >
+
+            <div class="titulo-lateral">
+                Pessoal
+            </div>
+
+            <div class="informacao">
+                <strong>Nome</strong>
+                Joana Barbosa
+            </div>
+
+            <div class="informacao">
+                <strong>Endereço</strong>
+                Rua da Paz, 250<br>
+                7100-011 Lisboa
+            </div>
+
+            <div class="informacao">
+                <strong>Número de telefone</strong>
+                963000121
+            </div>
+
+            <div class="informacao">
+                <strong>Email</strong>
+                exemplo@cymaker.pt
+            </div>
+
+            <div class="titulo-lateral">
+                Interesses
+            </div>
+
+        </div>
+
+        <div class="conteudo">
+
+            <h1>Joana Barbosa</h1>
+
+            <p class="descricao">
+                Uma marketer digital com sentido de missão e com mais de três anos
+                de experiência em conduzir iniciativas promocionais. Sou uma
+                especialista em online marketing, lead generation e nurturing.
+                Tenho uma comunicação exemplar, aptidões interpessoais e trabalho
+                bem sobre pressão de forma a atingir os objetivos.
+            </p>
+
+            <h2>Experiência profissional</h2>
+
+            <div class="experiencia">
+
+                <span class="cargo">Junior SEO Marketer</span>
+
+                <span class="data">2017 - 2019</span>
+
+                <div class="empresa">
+                    Cyanca, Lisboa
+                </div>
+
+                <ul>
+                    <li>Página on/off SEO</li>
+                    <li>Estratégias de linkbuilding</li>
+                    <li>Criação de conteúdo relevante</li>
+                    <li>Trabalho com ferramentas online: Ahrefs, Google Analytics, Google Search Console, Google Adwords</li>
+                </ul>
+
+            </div>
+
+            <div class="experiencia">
+
+                <span class="cargo">Assistente de Vendas</span>
+
+                <span class="data">2015 - 2016</span>
+
+                <div class="empresa">
+                    Salsa, Lisboa
+                </div>
+
+                <ul>
+                    <li>Contribuição para os objetivos de vendas</li>
+                    <li>Gestão de inventário</li>
+                    <li>Apoio a clientes</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
