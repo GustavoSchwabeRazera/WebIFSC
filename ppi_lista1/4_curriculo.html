@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Gustavo Razera</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        .curriculo {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        .contato {
+            margin-top: 15px;
+        }
+
+        .destaque {
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+        }
+   
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="curriculo">
+
+        <!-- CABEÇALHO -->
+        <header id="inicio">
+
+            <img src=".\images\fotoGustavo.jpeg"
+                 alt="Foto de perfil">
+
+            <h1>Gustavo Razera</h1>
+
+            <p>
+                <b>Desenvolvedor de Software</b> |
+                <span>Estudante de Tecnologia</span>
+            </p>
+
+            <div class="contato">
+                <p>
+                    E-mail:
+                    <a href="mailto:gustavo@email.com">
+                        gustavo@email.com
+                    </a>
+                </p>
+
+                <p>
+                    Telefone:
+                    <a href="tel:+5547999999999">
+                        (47) 99999-9999
+                    </a>
+                </p>
+            </div>
+
+        </header>
+
+
+        <!-- MENU -->
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#formacao">Formação</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#horarios">Horários</a>
+        </nav>
+
+
+        <!-- SOBRE -->
+        <section id="sobre">
+
+            <h2>Sobre mim</h2>
+
+            <p>
+                Sou estudante da área de tecnologia e tenho interesse
+                em <strong>desenvolvimento de software</strong>,
+                programação web e banco de dados.
+                Busco constantemente aprender novas tecnologias e
+                desenvolver projetos que ampliem meus conhecimentos.
+            </p>
+
+            <p>
+                Atualmente estou estudando
+                HTML<sub>5</sub>, CSS e JavaScript.
+            </p>
+
+        </section>
+
+
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+
+            <h2>Habilidades Técnicas</h2>
+
+            <ul>
+                <li>HTML e CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Git e GitHub</li>
+            </ul>
+
+        </section>
+
+
+        <!-- FORMAÇÃO -->
+        <section id="formacao">
+
+            <h2>Formação Acadêmica</h2>
+
+            <article>
+
+                <h3>Curso Técnico em Informática</h3>
+
+                <p>
+                    <strong>Instituição:</strong>
+                    Instituto de Tecnologia Exemplo
+                </p>
+
+                <p>
+                    <em>2024 - 2026</em>
+                </p>
+
+                <p>
+                    Formação voltada para desenvolvimento de sistemas,
+                    banco de dados, programação e tecnologias web.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- EXPERIÊNCIA -->
+        <section id="experiencia">
+
+            <h2>Experiência Profissional</h2>
+
+            <article>
+
+                <h3>Desenvolvedor Júnior</h3>
+
+                <p>
+                    <strong>Empresa:</strong> Tech Solutions
+                </p>
+
+                <p>
+                    <em>Janeiro de 2026 - Atualmente</em>
+                </p>
+
+                <p>
+                    Desenvolvimento e manutenção de aplicações web,
+                    utilizando <mark>HTML, CSS e JavaScript</mark>.
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>Estagiário de TI</h3>
+
+                <p>
+                    <strong>Empresa:</strong> Sistemas Brasil
+                </p>
+
+                <p>
+                    <em>2025 - 2026</em>
+                </p>
+
+                <p>
+                    Auxílio no desenvolvimento de sistemas,
+                    suporte técnico e manutenção de banco de dados.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- GRADE DE HORÁRIOS -->
+        <section id="horarios">
+
+            <h2>Grade de Horários</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>07:30 - 09:00</td>
+                        <td>Programação</td>
+                        <td>Banco de Dados</td>
+                        <td>Matemática</td>
+                        <td>Programação</td>
+                        <td>Redes</td>
+                    </tr>
+
+                    <tr>
+                        <td>09:15 - 10:45</td>
+                        <td>Banco de Dados</td>
+                        <td>Desenvolvimento Web</td>
+                        <td>Programação</td>
+                        <td>Redes</td>
+                        <td>Desenvolvimento Web</td>
+                    </tr>
+
+                    <tr>
+                        <td>11:00 - 12:30</td>
+                        <td>Matemática</td>
+                        <td>Programação</td>
+                        <td>Banco de Dados</td>
+                        <td>Desenvolvimento Web</td>
+                        <td>Projeto Integrador</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- INFORMAÇÕES EXTRAS -->
+        <section>
+
+            <h2>Informações Extras</h2>
+
+            <details>
+
+                <summary>Clique para ver mais informações</summary>
+
+                <p>
+                    Tenho interesse em desenvolvimento
+                    <span class="destaque">Front-end e Back-end</span>.
+                </p>
+
+                <p>
+                    Também gosto de desenvolver projetos pessoais
+                    utilizando <b>Java</b>, <em>Python</em> e
+                    outras tecnologias.
+                </p>
+
+            </details>
+
+        </section>
+
+
+        <!-- LINKS -->
+        <section>
+
+            <h2>Links</h2>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/" target="_blank">
+                    Acessar GitHub
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/" target="_blank">
+                    Acessar LinkedIn
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- RODAPÉ -->
+        <footer>
+
+            <p>
+                Currículo desenvolvido utilizando
+                <strong>HTML e CSS</strong>.
+            </p>
+
+            <a href="#inicio">Voltar ao início</a>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>

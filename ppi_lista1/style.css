@@ -1,0 +1,151 @@
+/* Configuração geral da página */
+body {
+    background-color: #f2f2f2;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Títulos */
+h1 {
+    color: #1f4e79;
+    text-align: center;
+}
+
+h2 {
+    color: #2c5f8a;
+    border-bottom: 2px solid #1f4e79;
+    padding-bottom: 5px;
+}
+
+/* Parágrafos */
+p {
+    line-height: 1.5;
+}
+
+/* Links */
+a {
+    color: #1f4e79;
+    text-decoration: none;
+}
+
+/* Hover dos links */
+a:hover {
+    color: #0080ff;
+    text-decoration: underline;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #1f4e79;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    padding: 8px;
+}
+
+/* Hover do menu */
+nav a:hover {
+    background-color: white;
+    color: #1f4e79;
+    text-decoration: none;
+}
+
+/* Imagens */
+img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #333333;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1f4e79;
+    color: white;
+}
+
+/* Formulário */
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+}
+
+/* Campos do formulário */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #aaaaaa;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Quando o usuário clica em um campo */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1f4e79;
+    outline: none;
+}
+
+/* Botão */
+button {
+    background-color: #1f4e79;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hover do botão */
+button:hover {
+    background-color: #0080ff;
+}
+
+/* Seções */
+section {
+    background-color: white;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+}
