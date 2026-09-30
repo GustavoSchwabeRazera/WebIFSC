@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        
+        .grid {
+            width: 700px;
+            height: 400px;
+            margin: 50px auto;
+            padding: 8px;
+            background-color: #eee;
+
+            display: grid;
+            grid-template-columns: 2fr 1.4fr 1.4fr 0.6fr;
+            grid-template-rows: 1fr 1fr 0.7fr;
+            gap: 6px;
+        }
+
+        .laranja {
+            background-color: orange;
+        }
+
+        .rosa {
+            background-color: #f2ad9b;
+            grid-row: span 2;
+        }
+
+        .azul-claro {
+            background-color: #c5dddd;
+            grid-column: span 2;
+        }
+
+        .azul {
+            background-color: lightblue;
+        }
+
+        .verde {
+            background-color: #bdcc6d;
+            grid-row: span 2;
+        }
+
+        .amarelo {
+            background-color: #ffb52e;
+            grid-column: span 2;
+        }
+
+        .bolinhas {
+            grid-row: span 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .bola {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .bola1 {
+            background-color: coral;
+        }
+
+        .bola2 {
+            background-color: pink;
+        }
+
+        .bola3 {
+            background-color: #bdcc8d;
+        }
+
+        .bola4 {
+            background-color: #c9b8e5;
+        }
+
+        @media (max-width: 600px) {
+
+            .grid {
+                width: 90%;
+                height: auto;
+                margin: 20px auto;
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            .laranja,
+            .rosa,
+            .azul-claro,
+            .azul,
+            .verde,
+            .amarelo {
+                width: 100%;
+                height: 100px;
+            }
+
+            .bolinhas {
+                width: 100%;
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+
+        <div class="laranja"></div>
+
+        <div class="rosa"></div>
+
+        <div class="azul-claro"></div>
+
+        <div class="azul"></div>
+
+        <div class="verde"></div>
+
+        <div class="bolinhas">
+            <div class="bola bola1"></div>
+            <div class="bola bola2"></div>
+            <div class="bola bola3"></div>
+            <div class="bola bola4"></div>
+        </div>
+
+        <div class="amarelo"></div>
+
+    </div>
+
+</body>
+
+</html>

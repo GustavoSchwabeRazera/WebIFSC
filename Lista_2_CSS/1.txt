@@ -1,0 +1,15 @@
+Nível 11
+
+flex-direction: column;
+justify-content: flex-end;
+
+Usei flex-direction: column para deixar os sapos um embaixo do outro. Depois usei justify-content: flex-end para colocar eles no final do lago.
+
+-------------------------------------------------------
+Nível 13
+
+flex-direction: row-reverse;
+justify-content: center;
+align-items: flex-end;
+
+Usei row-reverse para inverter a ordem dos sapos, center para deixar eles no meio e align-items: flex-end para colocar eles na parte de baixo.

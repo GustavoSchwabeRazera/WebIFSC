@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .pagina {
+            min-height: 100vh;
+            padding: 40px;
+
+            display: grid;
+            grid-template-columns: 1fr 2fr 0.7fr;
+            grid-template-rows: 120px 250px;
+            gap: 10px;
+        }
+
+        .a {
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .b {
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            grid-column: 3;
+        }
+
+        .c {
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .grupo {
+            background-color: #444;
+            padding: 15px;
+            grid-column: 2 / 4;
+
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 8px;
+        }
+
+        .grupo div {
+            background-color: #ccc;
+            padding: 15px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pagina">
+
+        <div class="a">A</div>
+
+        <div class="b">B</div>
+
+        <div class="c">C</div>
+
+        <div class="grupo">
+            <div>E</div>
+            <div>F</div>
+            <div>G</div>
+            <div>M</div>
+            <div>I</div>
+            <div>J</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

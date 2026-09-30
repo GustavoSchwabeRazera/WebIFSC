@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdos</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .grid {
+            width: 700px;
+            height: 400px;
+            margin: 50px auto;
+            padding: 8px;
+            background-color: #eee;
+
+            display: grid;
+            grid-template-columns: 2fr 1.4fr 1.4fr 0.6fr;
+            grid-template-rows: 1fr 1fr 0.7fr;
+            gap: 6px;
+        }
+
+        .web {
+            background-color: orange;
+        }
+
+        .html {
+            background-color: lightblue;
+        }
+
+        .css {
+            background-color: #f2ad9b;
+            grid-row: span 2;
+        }
+
+        .animate {
+            background-color: #c5dddd;
+            grid-column: span 2;
+        }
+
+        .position {
+            background-color: #ffb52e;
+            grid-column: span 2;
+        }
+
+        .flex {
+            background-color: #bdcc6d;
+            grid-row: span 2;
+        }
+
+        .gridLink {
+            background-color: coral;
+        }
+
+        .grid a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .grid {
+                width: 90%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .grid a {
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+
+        <a class="web" href="5_refs/web.html">WEB</a>
+
+        <a class="css" href="5_refs/css.html">CSS</a>
+
+        <a class="animate" href="5_refs/animate.html">Animate</a>
+
+        <a class="html" href="5_refs/html.html">HTML</a>
+
+        <a class="flex" href="5_refs/flex.html">Flex</a>
+
+        <a class="gridLink" href="5_refs/grid.html">Grid</a>
+
+        <a class="position" href="5_refs/position.html">Position</a>
+
+    </div>
+
+</body>
+
+</html>

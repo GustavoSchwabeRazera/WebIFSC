@@ -1,0 +1,5 @@
+Nível 11
+
+grid-column: 2 / span 3;
+
+Usei grid-column para escolher onde a água fica. O 2 faz começar na segunda linha e o span 3 faz ocupar 3 espaços, chegando nas cenouras.
