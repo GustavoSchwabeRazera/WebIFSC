@@ -22,3 +22,6 @@ imc=peso/(altura*altura)
 if(imc < 10.5){
     console.log("Abaixo do Peso")
 }
+if(fossa){
+    
+}
