@@ -31,3 +31,11 @@ nome = "João Henrique Macelo Boss"
 console.log(nome.split("").reverse().join(""));
 
 
+// funcoes com array 
+// reverse, join, map
+ItensChurrasco.map((e)=>{
+    console.log(e.length);
+})
+
+// filter 
+console.log(ItensChurrasco.filter((e,i)=> {return i!= 3}));
