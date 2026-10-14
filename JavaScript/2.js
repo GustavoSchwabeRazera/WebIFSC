@@ -43,5 +43,5 @@ console.log(ItensChurrasco.filter((e,i)=> {return i!= 3}));
 console.log(ItensChurrasco.filter((e,i)=> {return !e.split("").includes("p")}));
 
 console.log(JSON.stringify(ItensChurrasco));
-array=("[\"bla\" , \"bla1\"]");
+array=JSON.parse("[\"bla\" , \"bla1\"]");
 console.log(array[1])
