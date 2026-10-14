@@ -41,3 +41,7 @@ ItensChurrasco.map((e)=>{
 console.log(ItensChurrasco.filter((e,i)=> {return i!= 3}));
 // filtar por elementos sem letra p
 console.log(ItensChurrasco.filter((e,i)=> {return !e.split("").includes("p")}));
+
+console.log(JSON.stringify(ItensChurrasco));
+array=("[\"bla\" , \"bla1\"]");
+console.log(array[1])
