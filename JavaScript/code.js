@@ -46,8 +46,9 @@ switch (true) {
             break;
     }
 console.log(imc);
-imc.toString;
-resultado.innerHTML=imc
+
+
+resultado.innerHTML=imc.toFixed(2);
 
 })
 
