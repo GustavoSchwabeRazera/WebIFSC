@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cores aleatórias</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    #cores { display: flex; margin: 20px; }
+
+    .cor {
+      width: 20%;
+      height: 125px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 8px;
+      box-sizing: border-box;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="cores">
+    <div class="cor"></div>
+    <div class="cor"></div>
+    <div class="cor"></div>
+    <div class="cor"></div>
+    <div class="cor"></div>
+  </div>
+
+  <script>
+    document.addEventListener('keydown', e => {
+      if (e.code === 'Space') {
+        document.querySelectorAll('.cor').forEach(function(elemento) {
+          const cor = Math.floor(Math.random() * 16777216)
+            .toString(16)
+            .padStart(6, '0')
+            .toUpperCase();
+
+          elemento.style.backgroundColor = '#' + cor;
+          elemento.textContent = cor;
+        });
+      }
+    });
+  </script>
+</body>
+</html>
