@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+</head>
+<body>
+    <h1 id="Titulo">Sorteio de Números</h1>
+
+<label for="">Min</label>
+<input id="Min" type="text">
+
+<label for="">Max</label>
+<input id="Max" type="text">
+
+    <button id="Sortear">Sortear</button>
+    <p id="Resultado"></p>
+
+    <Script>
+        
+        
+        let resultado = document.getElementById("Resultado");
+        let sortear = document.querySelector("#Sortear");
+
+        
+
+        sortear.addEventListener("click",e =>{
+        
+            let min = Number.parseFloat(document.getElementById("Min").value);
+            let max = Number.parseFloat(document.getElementById("Max").value);
+
+        let sorteado = Math.floor(Math.random() * (max - min + 1)) + min;
+            resultado.innerHTML=sorteado.toString();
+        });
+    </Script>
+</body>
+</html>
