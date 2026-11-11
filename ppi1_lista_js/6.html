@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 6 - Números Primos</title>
+</head>
+<body>
+    <h1>Números Primos</h1>
+
+    <label>Início</label>
+    <input type="number" id="inicio">
+    <br>
+    <label>Fim</label>
+    <input type="number" id="fim">
+    <br>
+    <button id="verificar">Verificar</button>
+
+    <div id="resultadoPrimos"></div>
+
+    <script>
+        let inputInicio = document.getElementById("inicio");
+        let inputFim = document.getElementById("fim");
+        let verificar = document.getElementById("verificar");
+        let resultado = document.getElementById("resultadoPrimos");
+
+        let ehPrimo = (n) => {
+            if (n < 2) {
+                return false;
+            }
+            for (let i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        verificar.addEventListener("click", () => {
+           
+            if (inputInicio.value == "" || inputFim.value == "") {
+                alert("Preencha os dois campos!");
+                return;
+            }
+
+            let inicio = parseInt(inputInicio.value);
+            let fim = parseInt(inputFim.value);
+
+         
+            if (inicio > fim) {
+                let temp = inicio;
+                inicio = fim;
+                fim = temp;
+            }
+
+            let primos = [];
+
+            for (let n = inicio; n <= fim; n++) {
+                if (ehPrimo(n)) {
+                    primos.push(n);
+                }
+            }
+
+            if (primos.length == 0) {
+                resultado.innerHTML = "Nenhum primo entre " + inicio + " e " + fim;
+            } else {
+                resultado.innerHTML = "Primos entre " + inicio + " e " + fim + ": " + primos.join(", ");
+            }
+        })
+    </script>
+</body>
+</html>
