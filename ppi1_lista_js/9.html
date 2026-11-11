@@ -32,7 +32,7 @@
     document.addEventListener('keydown', e => {
       if (e.code === 'Space') {
         document.querySelectorAll('.cor').forEach(function(elemento) {
-          const cor = Math.floor(Math.random() * 16777216)
+          const cor = Math.floor(Math.random() * 10000000)
             .toString(16)
             .padStart(6, '0')
             .toUpperCase();

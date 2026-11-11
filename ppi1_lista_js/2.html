@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 2 - Tipos e Operadores</title>
+</head>
+<body>
+    <h1>Tipos de Variáveis e Operadores</h1>
+    <button id="executar">Executar</button>
+
+    <h2>Tipos</h2>
+    <p id="pstring"></p>
+    <p id="pnumero"></p>
+    <p id="pboolean"></p>
+    <p id="pundefined"></p>
+    <p id="pnull"></p>
+    <p id="pobjeto"></p>
+    <p id="parray"></p>
+
+    <h2>Operações</h2>
+    <p id="op1"></p>
+    <p id="op2"></p>
+    <p id="op3"></p>
+    <p id="op4"></p>
+
+    <script>
+        executar.addEventListener("click", function () {
+            let texto = "5";
+            let numero = 10;
+            let booleano = true;
+            let indefinido;
+            let nulo = null;
+            let objeto = { nome: "Ana" };
+            let array = [1, 2, 3];
+
+            document.getElementById("pstring").innerText = 'texto = "5" = ' + typeof texto;
+            document.getElementById("pnumero").innerText = "numero = 10 = " + typeof numero;
+            document.getElementById("pboolean").innerText = "booleano = true = " + typeof booleano;
+            document.getElementById("pundefined").innerText = "indefinido (sem valor) = " + typeof indefinido;
+            document.getElementById("pnull").innerText = "nulo = null = " + typeof nulo;
+            document.getElementById("pobjeto").innerText = 'objeto = { nome: "Ana" } = ' + typeof objeto;
+            document.getElementById("parray").innerText = "array = [1, 2, 3] = " + typeof array;
+
+            console.log("string + number:", texto + numero);
+            console.log("string * number:", texto * numero);
+            console.log("boolean * number:", booleano * numero);
+            console.log("null + number:", nulo + numero);
+
+            document.getElementById("op1").innerText =
+                '"5" + 10 = ' + (texto + numero) + " → junta como texto (concatena).";
+            document.getElementById("op2").innerText =
+                '"5" * 10 = ' + (texto * numero) + " → o * converte a string em número.";
+            document.getElementById("op3").innerText =
+                "true * 10 = " + (booleano * numero) + " → true vira 1.";
+            document.getElementById("op4").innerText =
+                "null + 10 = " + (nulo + numero) + " → null vira 0.";
+        })
+    </script>
+</body>
+</html>
