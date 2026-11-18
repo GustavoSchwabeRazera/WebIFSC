@@ -12,9 +12,18 @@
 
     </form>
     <?php 
-        if(!isset(&num = $_GET['numero'])){
+        if(!isset($_GET['numero'])){
             exit();
         }
+        $num = $_GET['number'];
+
+    function tabuada($num){
+        for($i = 1; $i < 10; $i++){
+            $res = $num * $i;
+            echo "$num x $i = $res";
+        }
+    }
+    tabuada($num);
 
     ?>
 </body>
