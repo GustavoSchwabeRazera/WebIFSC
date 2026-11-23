@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 14 - Captura de Teclas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    #saida {
+      min-height: 80px;
+      padding: 10px;
+      border: 1px solid #000;
+      font-size: 22px;
+      white-space: pre-wrap;  
+      word-break: break-all;
+    }
+
+    #info {
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Captura de Teclas do Teclado</h1>
+  <p>Comece a digitar em qualquer lugar da página.</p>
+
+  <div id="saida"></div>
+  <p id="info">Última tecla: —</p>
+
+  <script>
+    const saida = document.getElementById("saida");
+    const info = document.getElementById("info");
+
+    document.addEventListener("keydown", function (event) {
+      
+      console.log("Tecla: " + event.key + " | Código: " + event.code);
+
+   
+      info.textContent = "Última tecla: " + event.key + " (" + event.code + ")";
+
+    
+    
+
+     
+      if (event.key === "Enter") {
+        saida.textContent += "\n";
+        return;
+      }
+
+     
+      if (event.key.length === 1) {
+        saida.textContent += event.key;
+
+      
+      }
+    });
+  </script>
+</body>
+</html>
