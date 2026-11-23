@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 10 - Calculadora</title>
+</head>
+<body>
+  <h1>Calculadora</h1>
+
+  <input type="number" id="numero1" placeholder="Primeiro número">
+
+  <select id="operacao">
+    <option value="+">+</option>
+    <option value="-">−</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+
+  <input type="number" id="numero2" placeholder="Segundo número">
+
+  <button id="calcularButton">Calcular</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    const numero1 = document.getElementById("numero1");
+    const numero2 = document.getElementById("numero2");
+    const operacao = document.getElementById("operacao");
+    const calcularButton = document.getElementById("calcularButton");
+    const resultado = document.getElementById("resultado");
+
+    calcularButton.addEventListener("click", function () {
+     
+      if (numero1.value === "" || numero2.value === "") {
+        resultado.textContent = "Por favor, preencha os dois números.";
+        return;
+      }
+
+      const a = parseFloat(numero1.value);
+      const b = parseFloat(numero2.value);
+      let total;
+
+      switch (operacao.value) {
+        case "+":
+          total = a + b;
+          break;
+        case "-":
+          total = a - b;
+          break;
+        case "*":
+          total = a * b;
+          break;
+        case "/":
+          if (b === 0) {
+            resultado.textContent = "Erro: não é possível dividir por zero.";
+            return;
+          }
+          total = a / b;
+          break;
+      }
+
+      resultado.textContent = "Resultado: " + total;
+    });
+  </script>
+</body>
+</html>
