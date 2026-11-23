@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 7 - Palíndromo</title>
+</head>
+<body>
+    <h1>Verificador de Palíndromo</h1>
+
+    <label>Palavra</label>
+    <input type="text" id="palavra" placeholder="Digite uma palavra">
+    <button id="verificar">Verificar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        let inputPalavra = document.getElementById("palavra");
+        let verificar = document.getElementById("verificar");
+        let resultado = document.getElementById("resultado");
+
+        let ehPalindromo = (palavra) => {
+            let invertida = palavra.split("").reverse().join("");
+            return palavra == invertida;
+        }
+
+        let checar = () => {
+            let palavra = inputPalavra.value.trim().toLowerCase();
+
+            if (palavra == "") {
+                alert("Digite uma palavra!");
+                return;
+            }
+
+            if (ehPalindromo(palavra)) {
+                resultado.innerHTML = palavra + ": é palíndromo";
+            } else {
+                resultado.innerHTML = palavra + ": não é palíndromo";
+            }
+        }
+
+        verificar.addEventListener("click", checar);
+
+        inputPalavra.addEventListener("keydown", (e) => {
+            if (e.key == "Enter") {
+                checar();
+            }
+        });
+    </script>
+</body>
+</html>
