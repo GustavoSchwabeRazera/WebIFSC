@@ -15,12 +15,13 @@
         if(!isset($_GET['numero'])){
             exit();
         }
-        $num = $_GET['number'];
+        $num = $_GET['numero'];
 
     function tabuada($num){
-        for($i = 1; $i < 10; $i++){
+        for($i = 1; $i <= 10; $i++){
             $res = $num * $i;
             echo "$num x $i = $res";
+            echo "<br>";
         }
     }
     tabuada($num);
